@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--<button onclick="alert('hello')">Click me</button> -->
+
+<button onclick="myMessage()">Click me</button>
+
+<button onclick="myPicture1">tonoy</button>
+<button onclick="myPicture2">rakib</button>
+
+<p></p>
+<img id="myImg" src="#" alt="" height="200" width="200">
+
+<script>
+
+    function myMessage(){
+        alert('hello everyone');
+    }
+
+    var myVar = document.querySelector('#myImg');
+
+    function myPicture1(){
+        myVar.src="image/pic1.jpg";
+    }
+
+    function myPicture2(){
+        myVar.src="image/pic2.jpg";
+    }
+
+</script>
+
+
+</body>
+</html>
