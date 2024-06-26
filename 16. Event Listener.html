@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-style{
+            color: tomato;
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button >click me</button>
+    <h1 class="my-style">my name is rock</h1>
+    
+
+<script>
+    /*we can work with normal function and also we can add here anonymous function
+    document.querySelector("button").addEventListener("click",myFunction)
+
+    function myFunction(){
+        alert('Hello');
+    }*/
+
+    var myVar = document.querySelector("h1");
+    myVar.addEventListener("mouseover",function(){
+        //color = "red";
+        //alert("hi");
+        myVar.classList.add("my-style")
+
+    });
+
+</script>
+
+</body>
+</html>

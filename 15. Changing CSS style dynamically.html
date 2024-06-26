@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para-style{
+            color: red;
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p id="peraId" class="para-style">This is paragraph</p>
+    <button onclick="addStyle()">add style</button>
+    <button onclick="rmvStyle()">remove style</button>
+
+
+    <script>
+        function addStyle(){
+            var myVar = document.querySelector("#peraId")
+            myVar.classList.add("para-style")
+        }
+        function rmvStyle(){
+            var myVar = document.querySelector("#peraId")
+            myVar.classList.remove("para-style");
+        }
+
+        
+    </script>
+</body>
+</html>
