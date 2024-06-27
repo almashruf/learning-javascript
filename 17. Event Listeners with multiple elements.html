@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
+    <h1>You have not clicked any button</h1>
+
+    <button class="myButton">Button 1</button>
+    <button class="myButton">Button 2</button>
+    <button class="myButton">Button 3</button>
     
+<script>
+
+    var len = document.querySelectorAll(".myButton").length;
+    
+    for(var i=0; i<len; i++){
+        document.querySelectorAll(".myButton")[i].addEventListener("click",function(){
+
+
+        var text = this.innerHTML;
+        document.querySelector("h1").innerHTML = text +" is clicked" ;
+    });
+    }
+
+</script>
+
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="name">
+        Name:
+        <input type="text" name="name"/>
+    </label>
+
+    <script>
+        const varName = document.querySelector('input')
+        input.addEventListener('change',changeHandler)
+
+
+        function changeHandler(e){
+            console.log('Changed')
+            //we can also check event here
+            console.log(e.type)
+        }
+    </script>
+</body>
+</html>
