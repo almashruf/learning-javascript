@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        let students = {
+            id:33,
+            name: 'rakib',
+            cgpa:3
+        }
+
+        for(let x in students){
+            //console.log(students[x])
+            console.log(`${x} : ${students[x]}`)
+        }
+
+
+        //for each loop in js->
+
+        var numbers = [10,20,30,40];
+        numbers.forEach(myFunction)
+        function myFunction(x){
+            console.log(x)
+        }
+
+        //anonymous way
+
+        var numbers = [10,20,30,40];
+        numbers.forEach(function(x)){
+            console.log(x)
+        }
+
+        //make array value in squre ->
+
+        var numbers = [10,20,30,40];
+        var squreNum = [];
+        numbers.forEach(function(x)){
+            squreNum.push(x*x)
+        }
+
+
+    </script>
+</body>
+</html>

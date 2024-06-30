@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //make array value in squre ->
+
+        var numbers = [10,20,30,40];
+        var squreNum = [];
+        numbers.forEach(function(x)){
+            squreNum.push(x*x)
+        }
+
+        //using map ->
+        var numbers = [10,20,30,40];
+        var squreNum = numbers.map(function(x)){
+            return x*x;
+        }
+        console.log(squreNum)
+    </script>
+</body>
+</html>
