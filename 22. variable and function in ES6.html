@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    let x=5;
+    let y=9;
+
+    //let sum=x+y;
+
+    console.log(`Sum is ${x+y} . the end`)
+
+    // function in es6,
+
+    const add = (x,y) =>{
+        let sum  = x+y;
+        console.log(sum);
+    }
+
+    add(23,33)
+
+    // strict mode => discussion as variable declaration
+    // in fuction default and rest parameter
+    // spread operator
+
+    function add(x,y,z){
+        return x+y+z;
+    }
+
+    let numbers = [1,2,3]
+    console.log(add(...numbers))
+
+
+</script>
+
+</body>
+</html>
