@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students = [
+            {
+                id: 101,
+                name: 'tonoy',
+                gpa: 3.50
+            },
+            {
+                id: 102,
+                name: 'ronoy',
+                gpa: 3.00
+            },
+            {
+                id: 103,
+                name: 'tooy',
+                gpa: 2.50
+            },
+        ]
+
+        function studentsName1(){
+            students.filter(function(x){
+                return x.gpa>=3;
+            }).map(function(y){
+                return y.name;
+            });
+        }
+
+        const studentsName2 = () =>{
+            return students.filter((x)=>x.gpa>=3).map((y)=>y.name())
+        }
+
+        console.log(studentsName1())
+        console.log(studentsName2())
+
+
+        //object destructuring
+
+        const {id, fullname} = students
+
+        console.log(id)
+        console.log(fullname)
+
+        //function parameters destructuring
+
+        const student = {
+            id:101,
+            fullname: "tonoy"
+        }
+
+        cosnt studentInfo = ({id,  fullname}) =>{
+            console.log(`${id}, ${fullname}`)
+        }
+
+        // find(callback, value) return the value of the first element that pass cartain condition
+        //find index
+
+        let numbers = [5,55,14,5,78];
+
+        const evenNumber = (value,index,array) =>{
+            if(value%2===0)
+            return value;
+        }
+
+        let firstEvenNumberIndex = numbers.findIndex(evenNumber)
+        let firstEvenNumber = numbers.find(evenNumber)
+        //let firstEvenNumber = numbers.find(x=> x%2===0)
+        console.log(firstEvenNumber)
+        console.log(firstEvenNumberIndex)
+
+    </script>
+</body>
+</html>
