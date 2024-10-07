@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
         let myNumber = 32;
         //myNumber.toString(10);
         myNumber.toString(2);
-        console.log(myNumber)
+
+
+        const d = new Date(2018, 11, 24, 10,33,20);
+        document.getElementById('demo').innerHTML=d;
     </script>
 </body>
 </html>
