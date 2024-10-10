@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <script>
+        try{
+            adddlert("welcome guest!");
+        }catch(err){
+            document.getElementById("demo").innerHTML = err.message;
+        }
+
+
+        let x = 12;
+
+        try{
+            if(x>10) throw{
+                message: "too high",
+                name: "highError",
+            };
+        } catch(err){
+            console.log(err);
+        }
+
+        console.log("this is a test")
+    </script>
+</body>
+</html>
