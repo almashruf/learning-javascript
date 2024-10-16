@@ -12,10 +12,16 @@
                 this.name = name;
                 this.year = year;
             }
+
+            play(){
+                console.log(`${this.name} is racing`)
+            }
         }
 
         const car1 = new Car("toyota", 1990);
         const car2 = new Car("bmw", 1980);
+
+        car1.play();
     </script>
 </body>
 </html>
