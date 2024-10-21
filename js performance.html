@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Performance Test</h1>
+    <button onclick="runPerformanceTest()">Run Performance Test</button>
+
+    <script>
+        function sumUsingLoop(numbers) {
+            let sum = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+            }
+            return sum;
+        }
+        function sumUsingReduce(numbers) {
+            return numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        }
+        function runPerformanceTest() {
+            const numbers = Array.from({ length: 1000000 }, (_, i) => i + 1);
+
+            console.time('Sum using Loop');
+            sumUsingLoop(numbers);
+            console.timeEnd('Sum using Loop');
+
+            console.time('Sum using Reduce');
+            sumUsingReduce(numbers);
+            console.timeEnd('Sum using Reduce');
+        }
+    </script>
+</body>
+</html>
